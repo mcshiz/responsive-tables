@@ -1,0 +1,211 @@
+table.table-accordion {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: Agenda-Light, sans-serif;
+    font-weight: 100;
+    background: #083972;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    border-radius: 5px;
+}
+
+table.table-accordion thead th {
+    font-weight: 600;
+    text-align: left;
+}
+
+.table-accordion th:last-child {
+    text-align: right;
+}
+
+table.table-accordion thead th, table.table-accordion tbody td {
+    padding: .8rem;
+    /*font-size: 1.4rem;*/
+}
+
+table.table-accordion tbody td {
+    padding: .8rem;
+    /*font-size: 1.4rem;*/
+    color: #444;
+    background: #eee;
+    display: table-cell;
+    text-align: left;
+}
+
+table.table-accordion tbody tr:not(:last-child) {
+    border-top: 1px solid #083972;
+    border-bottom: 1px solid #083972;
+}
+
+table.table-accordion td:first-child:after {
+}
+
+.table-accordion tbody tr td:first-child {
+    width: 20%;
+    text-align: left;
+}
+
+.table-accordion td {
+    overflow-y: inherit;
+}
+
+table.table-accordion .accordion-arrow {
+    visibility: hidden;
+}
+
+table.table-accordion tfoot td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 0.75em;
+}
+
+table.table-accordion tfoot td a {
+    color: #fff;
+}
+
+table.table-accordion tfoot td a:hover {
+    color: #fe7800;
+}
+
+table.table-accordion tbody td.hiddenTableHeader {
+    display: none;
+}
+
+table.table-accordion thead th.hiddenTableHeader {
+    display: none;
+}
+
+.table-accordion tbody tr:nth-of-type(even):not(.subsubheader) td {
+    background-color: white;
+    border-bottom: 1px solid #000;
+}
+
+.table-accordion .subheader td {
+    background-color: #899ba6 !important;
+    color: white;
+    padding: 0.8em;
+}
+
+.table-accordion .subsubheader td {
+    background-color: #dfeced !important;
+    padding: 0.6em;
+    color: #000 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .table-accordion tbody tr:nth-of-type(even):not(.subsubheader) td {
+        border-bottom: 1px solid #fff;
+    }
+    table.table-accordion tbody td.hiddenTableHeader {
+        display: block;
+    }
+
+    table.table-accordion thead th.hiddenTableHeader {
+        display: block;
+    }
+
+    .table-accordion tbody tr td:first-child {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    table.table-accordion .accordion-arrow {
+        visibility: visible;
+        position: absolute;
+        display: inline-block;
+        top: 42%;
+        right: 5%;
+        /*padding: 15px;*/
+    }
+
+    table.table-accordion thead {
+        display: none;
+    }
+
+    table.table-accordion tbody td {
+        display: block;
+        padding: .6rem;
+        overflow-x: hidden;
+        text-align: left;
+    }
+    table.table-accordion .product-row a, table.table-accordion .product-row span {
+        display: inline-block;
+        max-width: 85%;
+    }
+    table.table-accordion tbody tr td:first-child {
+        background: #083972;
+        color: #fff;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+
+    table.table-accordion tbody tr td:first-child a {
+        color: white !important;
+        text-decoration: none;
+    }
+
+    table.table-accordion tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 0.5em;
+    }
+
+    table.table-accordion.collapsed .cart {
+        float: left !important;
+    }
+
+    table.table-accordion .collapsed {
+        display: none !important;
+    }
+
+    table.table-accordion td:first-child a {
+        color: #fff;
+    }
+
+    table.table-accordion a:hover {
+        color: #fe7800;
+    }
+
+    .table-accordion tbody tr:nth-of-type(even):not(.subsubheader) td:first-child {
+        background-color: #083972;
+    }
+
+    .table-accordion tbody tr:nth-of-type(even):not(.subsubheader) td {
+        background-color: #eee;
+    }
+
+    .table-accordion .pallet-special td:first-child {
+        background-color: #083972 !important;
+    }
+
+    .table-accordion tr.subsubheader td, tr.subsubheader {
+        height: 2em;
+        overflow-y: hidden;
+        line-height: 0.5em;
+        padding-top: 3px;
+    }
+
+}
+
+table.table-accordion .subheader {
+    background: #899ba6 !important;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    padding: .25em 0.8rem;
+}
+
+.table-accordion .subheader a {
+    color: white
+}
+
+table.table-accordion caption {
+    color: #cc0202;
+    font-weight: 700;
+    text-align: left;
+}
+
+table.table-accordion {
+    margin-bottom: 2em;
+}
